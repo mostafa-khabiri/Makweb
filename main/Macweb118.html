@@ -1,0 +1,1035 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macweb 118</title>
+
+    <!-- links -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fontiran.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body onload="loadDataTable()">
+    <div id="first-menu">
+        <div class="container-fluid">
+            <div class="container">
+                <nav class="navbar navbar-toggleable-sm navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img class="d-md-block d-sm-none d-none" src="img/logo.png" alt="logo">
+                        <img class="d-md-none d-sm-block d-block" src="img/Logo-2.png" alt="logo">
+                    </a>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item mt-md-0 mt-1">
+                            <a class="nav-link" href="#">
+                                عضویت
+                            </a>
+                        </li>
+                        <li class="nav-item mt-md-0 mt-1">
+                            <a class="nav-link" href="#">
+                                ورود اعضاء
+                            </a>
+                        </li>
+                    </ul>
+                    <form action="" class="d-lg-flex d-md-none d-sm-none d-none">
+                        <input type="text" class="form-control" id="input_desktop" placeholder="در جستجوی چه هستید؟">
+                        <button type="submit" class="btn">
+                            <img src="img/icons-Magnifier.svg" alt="search">
+                        </button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <div id="second-menu">
+        <div class="container-fluid">
+            <div class="container">
+                <nav class="navbar navbar-toggleable-md">
+                    <button class="navbar-toggler navbar-light navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="d-lg-flex w-100 d-sm-none d-none">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <svg class="icons home" x="0px" y="0px" viewBox="0 0 512 512">
+                                        <g><polygon points="256,152.96 79.894,288.469 79.894,470.018 221.401,470.018 221.401,336.973 296.576,336.973 296.576,470.018 432.107,470.018 432.107,288.469"/></g>
+                                        <g><polygon points="439.482,183.132 439.482,90.307 365.316,90.307 365.316,126.077 256,41.982 0,238.919 35.339,284.855 256,115.062 476.662,284.856 512,238.92"/></g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">درج و مدیریت اسلایدر تبلیغاتی</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">نمونه سایت اختصاصی اعضاء</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">سامانه های رایگان</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">سامانه های تخفیف دار</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">سامانه 118 مک وب (رایگان)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ارتباط با ما</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdownServices" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <svg class="icons more" viewBox="0 0 34 10">
+                                        <path id="svg_icon_-_More" data-name="svg icon - More" class="cls-1" d="M417,133a5,5,0,1,1,5-5A5,5,0,0,1,417,133Zm-12,0a5,5,0,1,1,5-5A5,5,0,0,1,405,133Zm-12,0a5,5,0,1,1,5-5A5,5,0,0,1,393,133Z" transform="translate(-388 -123)"/>
+                                    </svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownServices">
+                                    <a class="dropdown-item" href="#">متقاضیان دریافت نمایندگی</a>
+                                    <a class="dropdown-item" href="#">تعرفه ها</a>
+                                    <a class="dropdown-item" href="#">قوانین سایت</a>
+                                    <a class="dropdown-item" href="#">پشتیبانی 24 ساعته</a>
+                                    <a class="dropdown-item" href="#">پلیس سایت</a>
+                                    <a class="dropdown-item" href="#">آرشیو اخبار</a>
+                                    <a class="dropdown-item" href="#">راهنمای سایت</a>
+                                    <a class="dropdown-item" href="#">ارتباط مستقیم با مدیر مک وب</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <form action="" class="mr-auto d-lg-none">
+                        <input type="text" class="form-control" id="input_mobile" placeholder="در جستجوی چه هستید؟">
+                        <button type="submit" class="btn">
+                            <img src="img/icons-Magnifier.svg" alt="search">
+                        </button>
+                    </form>
+                </nav>
+    
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">صفحه نخست</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">درج و مدیریت اسلایدر تبلیغاتی</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">نمونه سایت اختصاصی اعضاء</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">سامانه های رایگان</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">سامانه های تخفیف دار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">سامانه 118 مک وب (رایگان)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">متقاضیان دریافت نمایندگی</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">تعرفه ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">قوانین سایت</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">پشتیبانی 24 ساعته</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">پلیس سایت</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">آرشیو اخبار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">راهنمای سایت</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ارتباط مستقیم با مدیر مک وب</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ارتباط با ما</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section id="top-slider">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 pull-xl-1 col-lg-10 pull-lg-1 col-md-12 pull-0 col-sm-12 col-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid" src="img/slider-3.jpg" alt="slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid" src="img/slider-2.jpg" alt="slide">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img class="d-block img-fluid" src="img/slider-1.jpg" alt="slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid" src="img/slider-4.jpg" alt="slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid" src="img/slider-5.jpg" alt="slide">
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            </ol>
+                            <a class="carousel-control-prev d-lg-block d-md-none d-none" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span>قبلی</span>
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next  d-lg-block d-md-none d-none" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span>بعدی</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="row" id="a1111">
+        <div class="col-md-1 bac-pic-job1"></div>
+        <div class="col-md-10 col-12">
+            
+
+            <!--  -->
+            <div id="sticky-pos" class="fixed-pos">
+
+                <div id="information-page">
+                    <div class="item-info">
+                        <h2> سامانه 118 مک وب</h2>
+                        <p>بازدید: <span>385214</span></p>
+                        <div class="icons-infopage">
+                            <a href="http://makweb.ir/#!" class="icon-envelope"></a>
+                            <a href="http://makweb.ir/#!" class="icon-share"></a>
+                            <a href="http://makweb.ir/#!" class="icon-printer"></a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+           
+            <!--  -->
+            <div class="inputs-mak my-4">
+                <div class="row">
+                    <div class="col-md-6 buttons-wrapper">
+                        <button class="insert-info-btn text-light ml-2 py-1 px-3" data-toggle="modal" data-target="#acceptmodal">درج اطلاعات شخصی</button>
+
+                        <button class="print-btn py-1 px-3">چاپ</button>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-9">
+                                                                <!-- <input type="search" id="searchinput" class="form-control form-control-sm"
+                                    placeholder="" aria-controls="informations" class="form-control"
+                                    onkeyup="searchTable()" placeholder="عنوان مورد نظر خود را وارد کنید"> -->
+                            </div>
+                            <div class="col-3">
+                                <!-- <select class="firstselect" name="select" id="">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select> -->
+                                <div class="dataTables_wrapper">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <!-- <div class="dataTables_length" id="informations_length">
+                                                <div class="form-group">
+                                                    		Show Numbers Of Rows 
+                                                    <select class="form-control" name="state" id="maxRows">
+                                                        <option value="10">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="100">100</option>
+                                                        <option value="5000">نمایش همه</option>
+                                                    </select>
+
+                                                </div>
+
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <div id="informations_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="informations_length"><label> <select name="informations_length" aria-controls="informations" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> </label></div><div id="informations_filter" class="dataTables_filter"><label><input type="search" class="" placeholder="" aria-controls="informations"></label></div><table id="informations" class="table table-striped table-responsive-lg dataTable no-footer" role="grid" aria-describedby="informations_info">
+                    <thead class="thead-dark bg-dark">
+                        <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="informations" rowspan="1" colspan="1" aria-sort="ascending" aria-label="ردیف: activate to sort column descending" style="width: 42px;">ردیف</th><th class="sorting" tabindex="0" aria-controls="informations" rowspan="1" colspan="1" aria-label="نام
+                                 نام خانوادگی
+                            : activate to sort column ascending" style="width: 84px;">نام
+                                <hr> نام خانوادگی
+                            </th><th class="sorting" tabindex="0" aria-controls="informations" rowspan="1" colspan="1" aria-label="استان
+                                 شهر
+                            : activate to sort column ascending" style="width: 45px;">استان
+                                <hr> شهر
+                            </th><th class="sorting" tabindex="0" aria-controls="informations" rowspan="1" colspan="1" aria-label="
+                                سال ورود
+                                روز / ماه
+                            : activate to sort column ascending" style="width: 64px;">
+                                سال ورود
+                                <hr>روز / ماه
+                            </th><th class="sorting" tabindex="0" aria-controls="informations" rowspan="1" colspan="1" aria-label="شغل / پیشه : activate to sort column ascending" style="width: 81px;">شغل / پیشه </th><th class="sorting" tabindex="0" aria-controls="informations" rowspan="1" colspan="1" aria-label="دانشگاه
+                                
+                                رشته تحصیلی
+                            : activate to sort column ascending" style="width: 91px;">دانشگاه
+                                <hr>
+                                رشته تحصیلی
+                            </th><th class="sorting" tabindex="0" aria-controls="informations" rowspan="1" colspan="1" aria-label="علاقه
+                                 جنسیت
+                            : activate to sort column ascending" style="width: 57px;">علاقه
+                                <hr> جنسیت
+                            </th><th class="sorting" tabindex="0" aria-controls="informations" rowspan="1" colspan="1" aria-label="
+                                 شبکه اجتماعی
+                                 ایمیل
+                            : activate to sort column ascending" style="width: 94px;">
+                                 شبکه اجتماعی
+                                <hr> ایمیل
+                            </th><th class="sorting" tabindex="0" aria-controls="informations" rowspan="1" colspan="1" aria-label="توضیحات : activate to sort column ascending" style="width: 67px;">توضیحات </th><th class="sorting" tabindex="0" aria-controls="informations" rowspan="1" colspan="1" aria-label="تصویر : activate to sort column ascending" style="width: 47px;">تصویر </th><th class="sorting" tabindex="0" aria-controls="informations" rowspan="1" colspan="1" aria-label=" : activate to sort column ascending" style="width: 12px;"> </th></tr>
+                    </thead>
+                    <tbody>
+                        
+                        
+                      
+                    <tr role="row" class="odd">
+                            <td class="sorting_1">11</td>
+                            <td>مهدی
+                                <hr>موسوی
+                                <span class="tooltip">
+                                   دانشجوی ترم آخر کارشناسی رشته ی علوم کامپیوتر
+                                <hr> ساکن اراک
+                                </span>
+                            </td>
+                            <td>تهرانسر و شهرهای بزرگتر ازخودش درکنارش
+                                <hr> سیستان
+                                <span class="tooltip">
+                                    تهرانسر و شهرهای بزرگتر ازخودش درکنارش
+                                <hr> سیستان
+                                </span>
+                            </td>
+                            <td>1399
+                                <hr> 12 خرداد
+                                <span class="tooltip">
+                                    چه روز خوبی بود اونروز یادته؟
+                                <hr> سیستان
+                                </span>
+                            </td>
+                            <td id="td-5th" style="line-height: 20px;">ریسس انجمن سازمان گردشگری ایران،مدیر موسسا
+       ...<span class="tooltip">ریسس انجمن سازمان گردشگری ایران،مدیر موسسا
+                               
+                               ریسس انجمن سازمان گردشگری ایران،مدیر موسسان شرکت اوراق بهادار،رییس انجمن تالار داران ایران ،مدیر رستوران برکه،
+                            </span></td>
+                            <td>محلات
+                                <hr>علوم کامپیوتر
+                                <span class="tooltip">بسی رنج بردم در این سالی چند....</span>
+                            </td>
+                            <td>ورزش
+                                <hr>مونث
+                                <span class="tooltip">حالتون چطوره؟<hr>ندونی بهتره</span>
+                            </td>
+                            <td>09184893103
+                                <hr>seyed.mehdi137596@gmail.com
+                                <span class="tooltip">
+                                    seyed.mehdi137596@gmail.com
+                                <hr> ایمیل بزن بهم
+                                </span>
+                            </td>
+                            <td>بعدا توضیح خواهم داد
+                                <span class="tooltip">سریع تر توضیحات و برام ارسال کن داره دیر میشه</span>
+                            </td>
+                            <td><img src="img/mrkermani.jpg" class="profile-pic" alt="profile icon"></td>
+                            <td><a href="#"><i class="fa fa-edit primary-text"></i><span class="tooltip">ویرایش</span></a><br><a href="#"><i class="fa fa-remove"></i><span class="tooltip">حذف</span></a></td>
+                        </tr></tbody>
+                </table></div>
+
+            </div> <!-- 		End of Container -->
+
+
+        </div>
+        <div class="col-md-1 bac-pic-job2"></div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="container-fluid">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                             <div class="partner" style="direction: ltr;">
+                                 <div>
+                                     <a href="#"><img src="img/partner-1.png" alt="partner"></a>
+                                 </div>
+                                 <div>
+                                     <a href="#"><img src="img/partner-2.png" alt="partner"></a>
+                                 </div>
+                                 <div>
+                                     <a href="#"><img src="img/partner-3.png" alt="partner"></a>
+                                 </div>
+                                 <div>
+                                     <a href="#"><img src="img/partner-4.png" alt="partner"></a>
+                                 </div>
+                                 <div>
+                                     <a href="#"><img src="img/partner-5.png" alt="partner"></a>
+                                 </div>
+                                 <div>
+                                     <a href="#"><img src="img/partner-6.png" alt="partner"></a>
+                                 </div>
+                                 <div>
+                                     <a href="#"><img src="img/partner-7.png" alt="partner"></a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="row mt-xl-5 mt-lg-4 mt-3">
+                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                             <a href="#" class="card">
+                                 <img src="img/footer-1.png" alt="content image">
+                                 <div class="card-body">
+                                     <div class="text-right">
+                                         <span class="date">98/12/08</span>
+                                         <p>ساخت اپلیکیشن موبایل در دستور کار مک وب، قرار گرفت</p>
+                                     </div>
+                                     <div class="text-left">
+                                         <span class="more">مشاهده</span>
+                                     </div>
+                                 </div>
+                             </a>
+    
+                             <a href="#" class="card">
+                                 <img src="img/footer-2.png" alt="content image">
+                                 <div class="card-body">
+                                     <div class="text-right">
+                                         <span class="date">98/12/08</span>
+                                         <p>گزینه پیشنهادات ویژه، به سایت داخلی اعضاء اضافه شد</p>
+                                     </div>
+                                     <div class="text-left">
+                                         <span class="more">مشاهده</span>
+                                     </div>
+                                 </div>
+                             </a>
+    
+                             <a href="#" class="card">
+                                 <img src="img/footer-3.png" alt="content image">
+                                 <div class="card-body">
+                                     <div class="text-right">
+                                         <span class="date">98/12/08</span>
+                                         <p>کلیپ های صوتی، ویدئویی و تصویری به سایت اختصاصی اعضاء اضافه شد</p>
+                                     </div>
+                                     <div class="text-left">
+                                         <span class="more">مشاهده</span>
+                                     </div>
+                                 </div>
+                             </a>
+                         </div>
+                         <div class="d-xl-none d-lg-none col-md-6 d-md-block d-sm-none d-none">
+                             <a href="#" class="card">
+                                 <img src="img/footer-1.png" alt="content image">
+                                 <div class="card-body">
+                                     <div class="text-right">
+                                         <span class="date">98/12/08</span>
+                                         <p>ساخت اپلیکیشن موبایل در دستور کار مک وب، قرار گرفت</p>
+                                     </div>
+                                     <div class="text-left">
+                                         <span class="more">مشاهده</span>
+                                     </div>
+                                 </div>
+                             </a>
+    
+                             <a href="#" class="card">
+                                 <img src="img/footer-2.png" alt="content image">
+                                 <div class="card-body">
+                                     <div class="text-right">
+                                         <span class="date">98/12/08</span>
+                                         <p>گزینه پیشنهادات ویژه، به سایت داخلی اعضاء اضافه شد</p>
+                                     </div>
+                                     <div class="text-left">
+                                         <span class="more">مشاهده</span>
+                                     </div>
+                                 </div>
+                             </a>
+    
+                             <a href="#" class="card">
+                                 <img src="img/footer-3.png" alt="content image">
+                                 <div class="card-body">
+                                     <div class="text-right">
+                                         <span class="date">98/12/08</span>
+                                         <p>کلیپ های صوتی، ویدئویی و تصویری به سایت اختصاصی اعضاء اضافه شد</p>
+                                     </div>
+                                     <div class="text-left">
+                                         <span class="more">مشاهده</span>
+                                     </div>
+                                 </div>
+                             </a>
+                         </div>
+                         <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                             <div class="row">
+                                 <div class="info col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                     <div class="bg">
+                                         <div class="row">
+                                             <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mt-4">
+                                                 <div class="box">
+                                                     <img src="img/icons-footer-megaphone.svg" alt="">
+                                                     <span class="num">4</span>
+                                                     <span class="text">آگهی در فرصت های شغلی</span>
+                                                 </div>
+                                             </div>
+    
+                                             <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mt-4">
+                                                 <div class="box">
+                                                     <img src="img/icons-footer-image.svg" alt="">
+                                                     <span class="num">3</span>
+                                                     <span class="text">اسلایدرهای تبلیغاتی</span>
+                                                 </div>
+                                             </div>
+    
+                                             <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mt-4">
+                                                 <div class="box">
+                                                     <img src="img/icons-footer-globe.svg" alt="">
+                                                     <span class="num">1990</span>
+                                                     <span class="text">دارندگان سایت اختصاصی</span>
+                                                 </div>
+                                             </div>
+    
+                                             <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mt-4">
+                                                 <div class="box">
+                                                     <img src="img/icons-footer-promotions.svg" alt="">
+                                                     <span class="num">27</span>
+                                                     <span class="text">پیشنهادات ویژه</span>
+                                                 </div>
+                                             </div>
+    
+                                             <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mt-4">
+                                                 <div class="box">
+                                                     <img src="img/icons-footer-EmptyCapacities.svg" alt="">
+                                                     <span class="num">3</span>
+                                                     <span class="text">ظرفیت‌های خالی</span>
+                                                 </div>
+                                             </div>
+    
+                                             <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mt-4">
+                                                 <div class="box">
+                                                     <img src="img/icons-footer-repairing-service.svg" alt="">
+                                                     <span class="num">1990</span>
+                                                     <span class="text">سامانه‌های تخصصی</span>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                                     <a href="#" class="box-app">
+                                         <img class="icon-app" src="img/icons-app-android.svg" alt="android">
+                                         <span>دانلود اندروید</span>
+                                         <img class="icon-download" src="img/icons-download.svg" alt="download">
+                                     </a>
+                                 </div>
+                                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                                     <a href="#" class="box-app">
+                                         <img class="icon-app" src="img/icons-app-apple.svg" alt="apple">
+                                         <span>دانلود IOS</span>
+                                         <img class="icon-download" src="img/icons-download.svg" alt="download">
+                                     </a>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                     <div class="nav-more">
+                                         <ul>
+                                             <li class="nav-item"><a class="nav-link" href="#">عضویت در سامانه مرتبط با کسب و کار خود و دریافت سایت اختصاصی</a></li>
+                                             <li class="nav-item"><a class="nav-link" href="#">درج اسلایدر تبلیغاتی در 3 جایگاه مختلف</a></li>
+                                             <li class="nav-item"><a class="nav-link" href="#">درج آگهی متنی در فرصت های شغلی (ویژه صاحبان کسب و کار)</a></li>
+                                             <li class="nav-item"><a class="nav-link" href="#">وبگردی و تامین نیاز کاربران (از طریق جستجو در 1000 عنوان سامانه)</a></li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="scroll-top" href="#scrolltop">
+                <img class="bg" src="img/bg-scroll-top.svg" alt="bg scroll">
+                <a href="#first-menu">
+                    <img src="img/icons-top-scroll.svg" alt="arrow">
+                </a>
+            </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            کلیه حقوق مادی و معنوی این پرتال متعلق به مک وب می باشد
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- first modal -->
+    <div class="modal fade firstmodal" id="acceptmodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-11">
+                            <p class="modal-title"> فرم ارسال اطلاعات تماس</p>
+                        </div>
+                        <div class="col-1">
+                            <span class="times-modal" data-dismiss="modal">&times;</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="w-75">
+                            <span class="activenum">1</span>
+                            <span class="line"></span>
+                            <span class="disablenum">2</span>
+                        </div>
+                        <br><br><br>
+                        <p class="macwebrules">
+                            قوانین درج اطلاعات شخصی در مک وب
+                        </p>
+                        <ul class="list-rules">
+                            <li>هرکس مجاز به درج اطلاعات شخصی خود فقط می باشد.</li>
+                            <li>اطلاعات درج شده باید صحیح و واقعی باشد.</li>
+                            <li>درج عکس برای بانوان فقط با حجاب کامل (درغیر اینطورت تایید نمی شود.)</li>
+                            <li> تایید مشخصات و عکس اشخاص تا 24ساعت بعد از درج
+                                (در صورتیکه پس از این زمان اطلاعات ثبت نشده بود به منزله ی
+                                عدم تایید اطلاعات و یا عکس می باشد،لذا مجددا برای ثبت اطلاعات و مشخصات خود به صورت صحیح
+                                اقدام فرمایید)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-2"> <input id="checkboxmodal" class="inputformcheck inputformcheckmodal" type="checkbox"></div>
+                                <div class="col-10">
+                                    <p class="rules-text">قوانین مک وب</p>
+                                    <p class="text-muted">قوانین مک وب را مطالعه نمودم و نسبت به رعایت مفاد آن متعهد
+                                        هستم</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" data-toggle="modal" data-target="#secondmodal" id="nextstep"
+                                class="btn next-step red-btn" onclick="hidemodal()" disabled>گام بعدی </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end fist modal -->
+
+    <!-- second modal -->
+    <div class="modal fade" id="secondmodal2" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-11">
+                            <p class="modal-title"> فرم ارسال اطلاعات تماس</p>
+                        </div>
+                        <div class="col-1">
+                            <span class="times-modal" data-dismiss="modal">&times;</span>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="w-75">
+                            <span class="disablenum">1</span>
+                            <span class="line"></span>
+                            <span class="activenum">2</span>
+                        </div>
+
+                        <!-- test -->
+                        <div id="wrap" class="input">
+
+                            <section class="input-content">
+                                <div class="input-content-wrap">
+                                    <form action="" class="form-send">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <input class="inputform" id="input0" type="text" required />
+                                                        <label class="lableforinput" for="input0">نام و نام خانوادگی </label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <input class="inputform" id="input1" type="email" />
+                                                        <label class="lableforinput" for="input1">ایمیل</label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <select class="select-option" id="input3" required>
+                                                            <option value="0" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                        </select>
+                                                        <label class="label-for-select" class="label-for-select" for="input3">استان خود را انتخاب کنید</label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <select class="select-option" id="input4" type="select" required>
+                                                            <option value="0" disabled selected></option>
+                                                            <option value="2">2</option>
+                                                        </select>
+                                                        <label class="label-for-select" for="input4">شهر خود را انتخاب کنید</label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <input class="inputform" id="input5" type="text" required />
+                                                        <label class="lableforinput" for="input5">شغل / حرفه / سمت</label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <input class="inputform" id="input6" type="text" />
+                                                        <label class="lableforinput" for="input6">مدرک تحصیلی</label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <input class="inputform" id="input7" type="text" />
+                                                        <label class="lableforinput" for="input7">رشته ی تحصیلی</label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <input class="inputform" id="input8" type="text" required
+                                                            class="disabled-input" />
+                                                        <span class="orange-color caption">فقط دربخش پروفایل قابل ویرایش
+                                                            است.</span>
+                                                        <label class="lableforinput" for="input8">کدملی خود را وارد نمایید</label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <input class="inputform" id="input9" type="text" required />
+                                                        <label class="lableforinput" for="input9">سال تولد</label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <select class="select-option" id="input10" required>
+                                                            <option value="0" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                        </select>
+                                                        <label class="label-for-select" for="input10">ماه تولد خود را انتخاب نمایید</label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <select class="select-option" id="input11" required>
+                                                            <option value="0" disabled selected></option>
+                                                            <option value="1">1</option>
+                                                        </select>
+                                                        <label class="label-for-select" for="input11">روز تولد خود را انتخاب نمایید</label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <div class='file-input'>
+                                                            <input type='file' />
+                                                            <span class='button'>
+                                                                <img src="img/Edit-icon.png" alt="">
+                                                                <span class="upload-pic">آپلود عکس</span>
+                                                            </span>
+                                                            <span class='label' data-js-label>هیچ فایلی انتخاب نشده
+                                                                است</label>
+                                                        </div>
+                                                        <!-- <label for="chooseFile">ID</label> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <input class="inputform" id="input13" class="req-input" type="number" />
+                                                        <label class="lableforinput" for="input13">تلفن ثابت</label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <input class="inputform" id="input14" class="req-input" type="number" />
+                                                        <label class="lableforinput" for="input14">همراه</label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <input class="inputform" id="input15" class="req-input" type="text" />
+                                                        <label class="lableforinput" for="input15">آدرس شبکه اجتماعی </label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <select class="select-option" id="input16" required>
+                                                            <option value="0" disabled selected></option>
+                                                            <option value="1">اینستاگرام</option>
+                                                        </select>
+                                                        <label class="label-for-select" class="label-for-select" for="input16">نوع شبکه اجتماعی</label>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <input class="inputform" id="input17" type="password" required
+                                                            class="disabled-input" />
+                                                        <span class="orange-color caption">فقط دربخش پروفایل قابل ویرایش
+                                                            است.</span>
+                                                        <label class="lableforinput" for="input17">یک رمز ورود برای خود انتخاب کنید</label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <input class="inputform" id="input18" type="password" required
+                                                            class="disabled-input" />
+                                                        <span class="orange-color caption">فقط دربخش پروفایل قابل ویرایش
+                                                            است.</span>
+                                                        <label class="lableforinput" for="input18">تکرار رمز ورود</label>
+                                                        <!-- <span class="underline"></span> -->
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <dl class="inputbox">
+                                                    <dd class="inputbox-content">
+                                                        <div class='file-input'>
+                                                            <input class="inputform" type='text' id="captcha" required>
+                                                            <img src="img/Edit-icon.png" class="captcha" alt="">
+                                                            <label class="lableforinput" for="captcha">کد امنیتی را وارد نمایید</label>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <input type="submit" onclick="addReqired()" class="submit-btn" value="ارسال">
+                                            </div>
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- end test -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end second modal -->
+    <!-- scripts -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/makweb.js"></script>
+    <script>
+            $(function(){
+            var top = $("#sticky-pos").offset().top;
+            $(window).on('scroll',function(){
+                if(top<=$(window).scrollTop()){
+                    $("#sticky-pos").addClass("fixed-pos")
+                }else {
+                    $("#sticky-pos").removeClass("fixed-pos")
+                }
+            });
+        });
+
+        $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
+        $(this).val($(this).val().replace(/[^\d].+/, ""));
+        if ((event.which < 48 || event.which > 57)) {
+            event.preventDefault();
+        }
+    });
+
+    $('.scroll-top a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 'slow');
+        }
+    });
+
+    $('[href^="#navbarText"]').on('click',function () {
+        $('#navbarText').toggleClass('show');
+    });
+
+    $('.multiple-items').slick({
+        initialSlide: 3,
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows : false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        useTransform:false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    initialSlide: 4,
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    initialSlide: 4,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.partner').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 7,
+        slidesToScroll: 7,
+        arrows : false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        useTransform:false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 7,
+                    slidesToScroll: 7,
+                    infinite: true,
+                    arrows : false
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    arrows : false,
+                    cssEase: 'linear',
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows : false,
+                    cssEase: 'linear',
+                }
+            }
+        ]
+    });
+
+
+        document.getElementById("checkboxmodal").addEventListener('click', function (e) {
+        document.getElementById("nextstep").disabled = !e.target.checked;
+        document.getElementById("nextstep").classList.toggle("red-btn");
+        document.getElementById("nextstep").classList.toggle("active-btn");
+        });
+    </script>
+</body>
+
+</html>

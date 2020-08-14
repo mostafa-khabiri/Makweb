@@ -1,0 +1,20 @@
+<svg  transform="scale(-1, 1)" id="Left" xmlns="http://www.w3.org/2000/svg" width="350" height="986" viewBox="0 0 350 986">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #001a4e;
+        opacity: 0.03;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Edge" class="cls-1" d="M1920,1560.02c-127.28-165.97-424.75-578.125-332.58-692.183,78.44-97.079,237.44-222.514,332.58-293.851V1560.02Z" transform="translate(-1570 -574)"/>
+  <path id="Top_cover" data-name="Top cover" class="cls-2" d="M1920,1528.46c-139.81-194.28-325.51-487.15-250-580.46,58.5-72.3,161.75-160.321,250-230.008V1528.46Z" transform="translate(-1570 -574)"/>
+</svg>

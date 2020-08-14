@@ -1,0 +1,16 @@
+<svg id="SVG_Chevron_Hover" xmlns="http://www.w3.org/2000/svg" width="18.03" height="24.062" viewBox="0 0 18.03 24.062">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #4d4d4d;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <path id="Chevron" class="cls-1" d="M1512.5,583.52l-1-1,11.02-11.02-11.02-11.021,1-1,12.02,12.021Z" transform="translate(-1511.5 -559.469)"/>
+  <path id="Chevron-2" data-name="Chevron" class="cls-2" d="M1517.5,583.52l-1-1,11.02-11.02-11.02-11.021,1-1,12.02,12.021Z" transform="translate(-1511.5 -559.469)"/>
+</svg>

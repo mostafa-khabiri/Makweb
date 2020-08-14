@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="#808080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: gray;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="SVG-EmptyCapacities" class="cls-1" d="M592,3914H580a4,4,0,0,1-4-4v-12a4,4,0,0,1,4-4h12a4,4,0,0,1,4,4v12A4,4,0,0,1,592,3914Zm1-17H579v14h14v-14Zm-1-5H580a4,4,0,0,1-4-4v-12a4,4,0,0,1,4-4h12a4,4,0,0,1,4,4v12A4,4,0,0,1,592,3892Zm1-17H579v14h14v-14Zm-23,39H558a4,4,0,0,1-4-4v-12a4,4,0,0,1,4-4h12a4,4,0,0,1,4,4v12A4,4,0,0,1,570,3914Zm0-22H558a4,4,0,0,1-4-4v-12a4,4,0,0,1,4-4h12a4,4,0,0,1,4,4v12A4,4,0,0,1,570,3892Zm1-17H557v14h14v-14Z" transform="translate(-554 -3872)"/>
+</svg>

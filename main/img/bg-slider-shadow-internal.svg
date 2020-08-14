@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 600" style="enable-background:new 0 0 1920 600;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.4;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#3F1F55;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#F59212;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:url(#Shahab_jasemi-3_1_);}
+	.st5{opacity:0.1;fill-rule:evenodd;clip-rule:evenodd;fill:#F8E1BA;enable-background:new    ;}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#1E1326;}
+</style>
+<g id="Layer_4" class="st0">
+	
+		<radialGradient id="SVGID_1_" cx="956.9362" cy="161.8181" r="1111.109" gradientTransform="matrix(1 0 0 -0.2594 0 199.5005)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#583973"/>
+		<stop  offset="0.7179" style="stop-color:#583973"/>
+		<stop  offset="0.8184" style="stop-color:#583973;stop-opacity:0.7"/>
+		<stop  offset="1" style="stop-color:#583973;stop-opacity:0"/>
+	</radialGradient>
+	<rect class="st1" width="1920" height="600"/>
+</g>
+<g id="Layer_1_1_">
+	<path id="Shahab_jasemi" class="st2" d="M1920,0.5H0v251c0,0,468.5,148,945,148s975-148,975-148V0.5z"/>
+	<path id="Shahab_jasemi-2" class="st3" d="M1920,0.5H0v231c0,0,468.5,168,945,168s975-168,975-168V0.5z"/>
+	
+		<linearGradient id="Shahab_jasemi-3_1_" gradientUnits="userSpaceOnUse" x1="960" y1="737.5" x2="960" y2="338.5" gradientTransform="matrix(1 0 0 1 0 -338)">
+		<stop  offset="0" style="stop-color:#432059"/>
+		<stop  offset="1" style="stop-color:#1E1326"/>
+	</linearGradient>
+	<path id="Shahab_jasemi-3" class="st4" d="M1920,0.5H0v201c0,0,468.5,198,945,198s975-198,975-198V0.5z"/>
+	<path id="Shahab_jasemi-4" class="st5" d="M1920,0.5H0v101c0,0,468.5,278,945,278s975-278,975-278V0.5z"/>
+	<path id="Shahab_jasemi-5" class="st6" d="M1920,0.5H0v21c0,0,468.5,358,945,358s975-358,975-358V0.5z"/>
+</g>
+</svg>

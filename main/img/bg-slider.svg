@@ -1,0 +1,39 @@
+<svg id="Slider_BG" data-name="Slider BG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="399" viewBox="0 0 1920 399">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3f1f55;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fa920a;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        fill: #ffe1ba;
+        opacity: 0.1;
+      }
+
+      .cls-5 {
+        fill: #1d1326;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="960" y1="539" x2="960" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#432059"/>
+      <stop offset="1" stop-color="#1d1326"/>
+    </linearGradient>
+  </defs>
+  <path id="Shahab_jasemi" data-name="Shahab jasemi" class="cls-1" d="M1920,140H0V391S468.5,539,945,539s975-148,975-148V140Z" transform="translate(0 -140)"/>
+  <path id="Shahab_jasemi-2" data-name="Shahab jasemi" class="cls-2" d="M1920,140H0V371S468.5,539,945,539s975-168,975-168V140Z" transform="translate(0 -140)"/>
+  <path id="Shahab_jasemi-3" data-name="Shahab jasemi" class="cls-3" d="M1920,140H0V341S468.5,539,945,539s975-198,975-198V140Z" transform="translate(0 -140)"/>
+  <path id="Shahab_jasemi-4" data-name="Shahab jasemi" class="cls-4" d="M1920,140H0V241S468.5,519,945,519s975-278,975-278V140Z" transform="translate(0 -140)"/>
+  <path id="Shahab_jasemi-5" data-name="Shahab jasemi" class="cls-5" d="M1920,140H0v21S468.5,519,945,519s975-358,975-358V140Z" transform="translate(0 -140)"/>
+</svg>
